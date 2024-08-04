@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GearUp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, #34C759, hsl(0, 15%, 91%));
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+       .navbar {
+            background-image: linear-gradient(to left, hsl(0, 33%, 92%), #34C759);
+            background-repeat: no-repeat;
+        }
+       .navbar-brand {
+            color: #FFFFFF;
+        }
+       .nav-link {
+            color: #FFFFFF;
+        }
+       .nav-link:hover {
+            color: #CCCCCC;
+            .hero {
+            background-image: url('athe.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFFFFF;
+        }
+      .hero h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+      .hero p {
+            font-size: 24px;
+        }
+    </style></head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">GearUp</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Cart</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="hero">
+        <div class="container">
+            <h1>Welcome to GearUp</h1>
+            <p>Your one-stop shop for exclusive sports equipment. Get ready to take your game to the next level!</p>
+            <p>GearUp is a premier online retailer specializing in high-quality sports equipment and gear. Our mission is to provide athletes and outdoor enthusiasts with the best products to help them perform at their best. With a wide range of products from top brands, we're committed to helping you gear up for your next adventure.</p>
+        </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h2>Products</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="crickbat.jpeg" alt="Product 1">
+                            <h5>Cricket Bat SG</h5>
+                            <p>Price: Rs 2000</p>
+                            <button class="btn btn-primary" onclick="addToCart(1, 'Cricket Bat SG', 2000.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="crickball.jpeg" alt="Product 2">
+                            <h5>Cricket Ball</h5>
+                            <p>Price: Rs 350</p>
+                            <button class="btn btn-primary" onclick="addToCart(2, 'Cricket Ball', 350.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                                <div class="card">
+                                    <img src="basketball.jpg" alt="Product 3">
+                                    <h5>Basktball (NBA EDITION)</h5>
+                                    <p>Price: Rs 4000</p>
+                                    <button class="btn btn-primary" onclick="addToCart(3, 'Basktball (NBA EDITION)', 4000.00)">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="volleyball.jpeg" alt="Product 4">
+                                    <h5>Volleyball</h5>
+                                    <p>Price: Rs 4000</p>
+                                    <button class="btn btn-primary" onclick="addToCart(4, 'Volleyball', 400.00)">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="tt.jpeg" alt="Product 5">
+                                    <h5>Table Tennis Racket + Pingpong Ball </h5>
+                                    <p>Price: Rs 800</p>
+                                    <button class="btn btn-primary" onclick="addToCart(5, 'Table Tennis Racket + Pingpong Ball', 800.00)">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="football.jpeg" alt="Product 6">
+                                    <h5>Football (Champions league Special)</h5>
+                                    <p>Price: Rs 6000.00</p>
+                                    <button class="btn btn-primary" onclick="addToCart(6, 'Football (Champions league Special)', 6000.00)">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="shoe.jpeg" alt="Product 7">
+                                    <h5>Running Shoe</h5>
+                                    <p>Price: Rs 2100.00</p>
+                                    <button class="btn btn-primary" onclick="addToCart(7, 'Running Shoe', 2100.00)">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="tennisball.jpeg" alt="Product 8">
+                                    <h5>Tennis Ball</h5>
+                                    <p>Price: Rs 80.00</p>
+                                    <button class="btn btn-primary" onclick="addToCart(8, 'Tennis Ball', 80.00)">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="badminton.jpeg" alt="Product 9">
+                                    <h5>Badminton Racket + cock combo</h5>
+                                    <p>Price: Rs 900.00</p>
+                                    <button class="btn btn-primary" onclick="addToCart(9, 'Badminton Racket + cock combo', 900.00)">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-right">
+                <a class="btn btn-primary btn-lg" href="cart.html">View Cart</a></div>
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+            <script>
+                var cart = JSON.parse(localStorage.getItem("cart")) || [];
+            
+                function addToCart(productId, productName, productPrice) {
+                    var item = {id: productId, name: productName, price: productPrice, quantity: 1};
+                    cart.push(item);
+                    localStorage.setItem("cart", JSON.stringify(cart));
+                    alert("Item added to cart!");
+                }
+            </script>
+        </body>
+        </html>
